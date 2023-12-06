@@ -10,36 +10,25 @@
   position: relative;
 }
 
-.second{
-    position: absolute;
-    top: 16%;
-    left:50%;
-    transform-origin: 50% 100%;
-    transform: translateX(-50%) translateY(-100%);
-        width: 3px;
-    height: 100px;
-    background-color:darkred;
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
 }
-.minute{
-    position: absolute;
-    top: 16%;
-    left:50%;
-    transform-origin: 50% 100%;
-    transform: translateX(-50%) translateY(-100%);
-
-    width: 3px;
-    height: 100px;
-    background-color:black;
+.second {
+  width: 3px;
+  height: 100px;
+  background-color: darkred;
+}
+.minute {
+  width: 3px;
+  height: 100px;
+  background-color: black;
 }
 
-.hour{
-    position: absolute;
-    top: 23%;
-    left:49%;
-    transform-origin: 50% 100%;
-    transform: translateX(-50%) translateY(-100%);
-    width: 5px;
-    height: 80px;
-    background-color:black;
+.hour {
+  width: 5px;
+  height: 80px;
+  background-color: black;
 }
-

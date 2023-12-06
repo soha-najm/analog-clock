@@ -9,7 +9,7 @@ function Clock() {
       setTime(new Date());
     }, 1000);
     return () => clearInterval(interval);
-  }, [time]);
+  }, []);
 
   const secondsRotation = (time.getSeconds() / 60) * 360;
   const minutesRotation =
@@ -21,19 +21,24 @@ function Clock() {
     <div className="clock">
       <div
         className="hand second"
-        style={{ transform: `rotate(${secondsRotation}deg)` }}
+        style={{
+          transform: `translate(-50%,-100%) rotate(${secondsRotation}deg) `,
+        }}
       ></div>
       <div
         className="hand minute"
-        style={{ transform: `rotate(${minutesRotation}deg)` }}
+        style={{
+          transform: `translate(-50%,-100%) rotate(${minutesRotation}deg)`,
+        }}
       ></div>
       <div
         className="hand hour"
-        style={{ transform: `rotate(${hoursRotation}deg)` }}
+        style={{
+          transform: `translate(-50%,-100%) rotate(${hoursRotation}deg) `,
+        }}
       ></div>
     </div>
   );
 }
 
 export default Clock;
-
