@@ -22,19 +22,22 @@ function Clock() {
       <div
         className="hand second"
         style={{
-          transform: `translate(-50%,-100%) rotate(${secondsRotation}deg) `,
+          // transform: `translate(-50%,-100%) rotate(${secondsRotation}deg) `,
+          '--rotation':`${secondsRotation}deg `
         }}
       ></div>
       <div
         className="hand minute"
         style={{
-          transform: `translate(-50%,-100%) rotate(${minutesRotation}deg)`,
+          // transform: `translate(-50%,-100%) rotate(${minutesRotation}deg)`,
+          '--rotation': `${minutesRotation}deg`
         }}
       ></div>
       <div
         className="hand hour"
         style={{
-          transform: `translate(-50%,-100%) rotate(${hoursRotation}deg) `,
+          // transform: `translate(-50%,-100%) rotate(${hoursRotation}deg) `,
+          '--rotation':`${hoursRotation}deg `
         }}
       ></div>
     </div>
